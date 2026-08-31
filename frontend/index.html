@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Studium — organize provas, tarefas e estudos em um só lugar."
+    />
+    <title>Studium — Organize seus estudos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+  </head>
+  <body>
+    <header id="cabecalho">
+      <img src="/img/studium preto.png" alt="Studium" />
+      <nav id="menu">
+        <a href="#recursos">Recursos</a>
+        <a href="#ia">Studium AI</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="painelProfessor.html">Painel do Professor </a>
+      </nav>
+      <div class="acoes-menu">
+        <button class="botao botao-entrar" id="botao-entrar">Entrar</button>
+        <button class="botao botao-principal" id="botao-cadastrar">
+          Criar conta
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <div class="inicio-texto">
+          <p class="chamada">PARA QUEM AINDA TEM MAIS UMA PROVA PRA ESTUDAR</p>
+          <h1>
+            Estude sem precisar
+            <em>organizar tudo na cabeça.</em>
+          </h1>
+          <p class="descricao">
+            O Studium junta suas tarefas, provas, matérias e cronograma em um
+            lugar só. E, quando você quiser, a IA ajuda a decidir o que estudar
+            primeiro.
+          </p>
+          <div class="acoes-inicio">
+            <button
+              class="botao botao-principal botao-grande"
+              id="botao-comecar"
+            >
+              Começar agora
+            </button>
+            <a href="#recursos" class="botao botao-link">Ver como funciona →</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="recursos">
+        <div class="titulo-secao">
+          <p class="chamada">O QUE VOCÊ ENCONTRA AQUI</p>
+          <h2>
+            Tudo que costuma ficar
+            <span>espalhado.</span>
+          </h2>
+        </div>
+
+        <div class="recursos-conteudo">
+          <article class="recurso recurso-professores">
+            <p class="numero">01</p>
+            <h3>Professor e aluno no mesmo lugar.</h3>
+            <p>
+              O professor cria a turma e publica atividades, avisos e materiais.
+              O aluno recebe tudo direto no próprio painel.
+            </p>
+            <div class="fluxo">
+              <span>Professor</span>
+              <b>→</b>
+              <span>Turma</span>
+              <b>→</b>
+              <span>Aluno</span>
+            </div>
+          </article>
+
+          <article class="recurso recurso-tarefas">
+            <p class="numero">02</p>
+            <h3>Tarefas e provas.</h3>
+            <p>
+              Veja o que precisa ser feito, a data de entrega e o que está
+              chegando antes de virar correria.
+            </p>
+            <a href="aluno.html">Ver tarefas →</a>
+          </article>
+
+          <article class="recurso recurso-tempo">
+            <p class="numero">03</p>
+            <h3>Saiba onde seu tempo foi.</h3>
+            <p>
+              Registre suas sessões de estudo e acompanhe quanto tempo você
+              dedicou a cada matéria.
+            </p>
+            <div class="tempo">
+              <strong>02:35</strong>
+              <span>tempo estudado hoje</span>
+            </div>
+          </article>
+
+          <article class="recurso recurso-metas">
+            <p class="numero">04</p>
+            <h3>Metas que você consegue acompanhar.</h3>
+            <ul>
+              <li>✓ Terminar lista de matemática</li>
+              <li>✓ Revisar física</li>
+              <li>○ Estudar para história</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="ia">
+        <div class="ia-texto">
+          <p class="chamada">STUDIUM AI · EM DESENVOLVIMENTO</p>
+          <h2>
+            Você fala o que precisa estudar.
+            <span>A gente monta o caminho.</span>
+          </h2>
+          <p>
+            Tem três provas na mesma semana? Uma lista enorme de matemática?
+            Poucas horas disponíveis?
+          </p>
+          <p>
+            A ideia é simples: você informa suas matérias, compromissos e datas.
+            A IA organiza uma sugestão de cronograma que faça sentido para a sua
+            semana.
+          </p>
+          <button class="botao botao-verde" id="botao-testar-ia" onclick="testarIa()">
+            Ver como vai funcionar →
+          </button>
+        </div>
+
+        <div class="ia-cronograma">
+          <div class="cronograma-cabecalho">
+            <div>
+              <small>CRONOGRAMA</small>
+              <strong>Minha semana</strong>
+            </div>
+            <span>IA</span>
+          </div>
+
+          <div class="dia">
+            <time>SEG</time>
+            <div>
+              <strong>Matemática</strong>
+              <span>Funções · 40 min</span>
+            </div>
+          </div>
+
+          <div class="dia">
+            <time>TER</time>
+            <div>
+              <strong>Física</strong>
+              <span>Óptica · 30 min</span>
+            </div>
+          </div>
+
+          <div class="dia dia-destaque">
+            <time>QUA</time>
+            <div>
+              <strong>História</strong>
+              <span>Período Regencial · 45 min</span>
+            </div>
+          </div>
+
+          <div class="dia">
+            <time>QUI</time>
+            <div>
+              <strong>Matemática</strong>
+              <span>Exercícios · 35 min</span>
+            </div>
+          </div>
+
+          <div class="dia">
+            <time>SEX</time>
+            <div>
+              <strong>Revisão geral</strong>
+              <span>30 min</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="professores">
+        <div class="professores-titulo">
+          <p class="chamada">E SEU PROFESSOR?</p>
+          <h2>Não precisa mandar tudo pelo grupo da turma.</h2>
+        </div>
+
+        <div class="professores-texto">
+          <p>
+            No Studium, cada professor pode ter suas próprias turmas e publicar
+            atividades, materiais e avisos para os alunos.
+          </p>
+          <p>
+            O aluno entra na turma uma vez. Depois disso, as novidades aparecem
+            no lugar certo.
+          </p>
+          <a href="painelProfessor.html" class="link"
+            >Conhecer a área do professor →</a
+          >
+        </div>
+      </section>
+
+      <section id="como-funciona">
+        <div class="como-titulo">
+          <p class="chamada">SEM COMPLICAÇÃO</p>
+          <h2>
+            Três coisas.
+            <span>E pronto.</span>
+          </h2>
+        </div>
+
+        <div class="passos">
+          <article class="passo">
+            <strong>01</strong>
+            <h3>Crie sua conta.</h3>
+            <p>Escolha se você é aluno ou professor e entre no Studium.</p>
+          </article>
+
+          <article class="passo">
+            <strong>02</strong>
+            <h3>Entre na sua turma.</h3>
+            <p>
+              Professores criam turmas. Alunos entram nelas e passam a receber
+              as atividades.
+            </p>
+          </article>
+
+          <article class="passo">
+            <strong>03</strong>
+            <h3>Estude.</h3>
+            <p>
+              Acompanhe o que está pendente, organize sua semana e registre seu
+              progresso.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="chamada-final">
+        <div>
+          <p class="chamada">STUDIUM</p>
+          <h2>
+            Menos tempo tentando se organizar.
+            <br />
+            Mais tempo estudando.
+          </h2>
+        </div>
+        <button class="botao botao-claro botao-grande" id="botao-chamada">
+          Criar minha conta →
+        </button>
+      </section>
+    </main>
+
+    <footer id="rodape">
+      <img src="/img/studium preto.png" alt="Studium" />
+      <p>Organize. Estude. Evolua.</p>
+      <span>© 2026 Studium</span>
+    </footer>
+
+    <div id="modal">
+      <div class="fundo-modal" data-fechar></div>
+      <div class="caixa-modal">
+        <button class="fechar-modal" data-fechar aria-label="Fechar">×</button>
+        <p class="chamada">BEM-VINDO AO STUDIUM</p>
+        <h2>Como você vai usar?</h2>
+        <p>Escolha seu perfil para continuar.</p>
+
+        <div class="escolha-perfil">
+          <button class="perfil-opcao" data-perfil="Aluno">
+            <strong>Aluno</strong>
+            <span>Organizar meus estudos</span>
+          </button>
+
+          <button class="perfil-opcao" data-perfil="Professor">
+            <strong>Professor</strong>
+            <span>Gerenciar minhas turmas</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

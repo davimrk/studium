@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Studium — Professor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="professor.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="/img/studium preto.png" alt="Studium" />
+
+      <div class="professor">
+        <strong>Prof. Marcos</strong>
+        <span>Professor</span>
+      </div>
+
+      <button id="sair">Sair</button>
+    </header>
+
+    <main>
+      <section class="inicio">
+        <div>
+          <p>PAINEL DO PROFESSOR</p>
+          <h1>Olá, Marcos.</h1>
+        </div>
+
+        <button id="nova-atividade">+ Nova atividade</button>
+      </section>
+
+      <!-- RESUMO -->
+
+      <section class="resumo">
+        <div class="card">
+          <span>Turmas</span>
+          <strong>3</strong>
+        </div>
+
+        <div class="card">
+          <span>Alunos</span>
+          <strong>87</strong>
+        </div>
+
+        <div class="card">
+          <span>Atividades</span>
+          <strong>8</strong>
+        </div>
+      </section>
+
+      <!-- CONTEÚDO -->
+
+      <section class="conteudo">
+        <!-- TURMAS -->
+
+        <div class="box">
+          <div class="box-topo">
+            <h2>Minhas turmas</h2>
+
+            <button>+ Nova turma</button>
+          </div>
+
+          <div class="lista">
+            <div class="item">
+              <div>
+                <strong>2º Ano A</strong>
+                <span>31 alunos · Matemática</span>
+              </div>
+
+              <span>→</span>
+            </div>
+
+            <div class="item">
+              <div>
+                <strong>2º Ano B</strong>
+                <span>28 alunos · Matemática</span>
+              </div>
+
+              <span>→</span>
+            </div>
+
+            <div class="item">
+              <div>
+                <strong>1º Ano A</strong>
+                <span>28 alunos · Matemática</span>
+              </div>
+
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ATIVIDADES -->
+
+        <div class="box">
+          <div class="box-topo">
+            <h2>Atividades</h2>
+
+            <button id="nova-atividade-2">+ Criar</button>
+          </div>
+
+          <div class="lista">
+            <div class="item">
+              <div>
+                <strong>Equações do 2º grau</strong>
+                <span>2º Ano A · Entrega: 02/09</span>
+              </div>
+
+              <span class="aberta">Aberta</span>
+            </div>
+
+            <div class="item">
+              <div>
+                <strong>Função exponencial</strong>
+                <span>2º Ano B · Entrega: 04/09</span>
+              </div>
+
+              <span class="aberta">Aberta</span>
+            </div>
+
+            <div class="item">
+              <div>
+                <strong>Revisão para prova</strong>
+                <span>1º Ano A · Sem prazo</span>
+              </div>
+
+              <span class="aberta">Publicado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AVISOS -->
+
+        <div class="box">
+          <div class="box-topo">
+            <h2>Avisos</h2>
+
+            <button>+ Novo aviso</button>
+          </div>
+
+          <div class="lista">
+            <div class="item">
+              <div>
+                <strong>Prova na próxima semana</strong>
+                <span>2º Ano A</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <strong>Material disponível</strong>
+                <span>2º Ano B</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+
+    <div id="modal">
+      <div class="modal-fundo"></div>
+
+      <div class="modal-caixa">
+        <button id="fechar">×</button>
+
+        <p>NOVA ATIVIDADE</p>
+
+        <h2>Criar atividade</h2>
+
+        <form id="form">
+          <label>
+            Título
+
+            <input
+              type="text"
+              id="titulo"
+              placeholder="Ex.: Lista de exercícios"
+              required
+            />
+          </label>
+
+          <label>
+            Turma
+
+            <select id="turma" required>
+              <option value="">Escolha uma turma</option>
+
+              <option>2º Ano A</option>
+              <option>2º Ano B</option>
+              <option>1º Ano A</option>
+            </select>
+          </label>
+
+          <label>
+            Data de entrega
+
+            <input type="date" id="data" required />
+          </label>
+
+          <button type="submit">Criar atividade</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="professor.js"></script>
+  </body>
+</html>

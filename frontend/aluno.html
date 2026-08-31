@@ -1,0 +1,178 @@
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Studium — Aluno</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="aluno.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="/img/studium preto.png" alt="Studium" />
+
+      <div class="aluno">
+        <strong>Davi</strong>
+        <span>Aluno</span>
+      </div>
+
+      <button id="sair">Sair</button>
+    </header>
+
+    <main>
+      <section class="inicio">
+        <div>
+          <p>MEU PAINEL</p>
+          <h1>Olá, Davi.</h1>
+          <span>Veja o que você tem para fazer.</span>
+        </div>
+      </section>
+
+      <section class="resumo">
+        <div class="card">
+          <span>Pendentes</span>
+          <strong>4</strong>
+        </div>
+
+        <div class="card">
+          <span>Para esta semana</span>
+          <strong>3</strong>
+        </div>
+
+        <div class="card">
+          <span>Concluídas</span>
+          <strong>12</strong>
+        </div>
+      </section>
+      <section class="conteudo">
+
+        <div class="box">
+          <div class="box-topo">
+            <h2>Minhas atividades</h2>
+          </div>
+
+          <div class="lista">
+            <div class="atividade">
+              <div class="data">
+                <strong>02</strong>
+                <span>SET</span>
+              </div>
+
+              <div>
+                <strong>Equações do 2º grau</strong>
+                <span>Matemática · 2º Ano A</span>
+              </div>
+
+              <button class="concluir">Concluir</button>
+            </div>
+
+            <div class="atividade">
+              <div class="data">
+                <strong>04</strong>
+                <span>SET</span>
+              </div>
+
+              <div>
+                <strong>Função exponencial</strong>
+                <span>Matemática · 2º Ano A</span>
+              </div>
+
+              <button class="concluir">Concluir</button>
+            </div>
+
+            <div class="atividade">
+              <div class="data">
+                <strong>08</strong>
+                <span>SET</span>
+              </div>
+
+              <div>
+                <strong>Trabalho de História</strong>
+                <span>História · 2º Ano A</span>
+              </div>
+
+              <button class="concluir">Concluir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="topo">
+            <h2>Minhas turmas</h2>
+            <button id="entrarTurma">+ Entrar em turma</button>
+          </div>
+
+          <div class="lista">
+            <div class="turma">
+              <div>
+                <strong>2º Ano A</strong>
+                <span>Matemática</span>
+              </div>
+
+              <span>→</span>
+            </div>
+
+            <div class="turma">
+              <div>
+                <strong>2º Ano A</strong>
+                <span>História</span>
+              </div>
+
+              <span>→</span>
+            </div>
+
+            <div class="turma">
+              <div>
+                <strong>2º Ano A</strong>
+                <span>Física</span>
+              </div>
+
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="avisos">
+          <div class="box-topo">
+            <h2>Últimos avisos</h2>
+          </div>
+
+          <div class="aviso">
+            <strong> Prova de matemática na próxima semana </strong>
+
+            <span> Prof. Marcos · 2º Ano A </span>
+          </div>
+
+          <div class="aviso">
+            <strong> Novo material disponível </strong>
+
+            <span> Prof. Ana · História </span>
+          </div>
+        </div>
+
+        <div class="estudo">
+          <p>SEU PROGRESSO</p>
+
+          <h2>Continue de onde parou.</h2>
+
+          <span> Você estudou 2h35 nesta semana. </span>
+
+          <button id="estudar">Continuar estudando →</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="aluno.js"></script>
+  </body>
+
